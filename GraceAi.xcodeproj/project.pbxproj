@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78C050F92D598C8500CB4747 /* GraceAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C050F82D598C8500CB4747 /* GraceAiApp.swift */; };
+		78C050FB2D598C8500CB4747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C050FA2D598C8500CB4747 /* ContentView.swift */; };
+		78C050FD2D598C8900CB4747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C050FC2D598C8900CB4747 /* Assets.xcassets */; };
+		78C051002D598C8900CB4747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C050FF2D598C8900CB4747 /* Preview Assets.xcassets */; };
+		78C051022D598C8900CB4747 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C051012D598C8900CB4747 /* Persistence.swift */; };
+		78C051052D598C8900CB4747 /* GraceAi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78C051032D598C8900CB4747 /* GraceAi.xcdatamodeld */; };
+		78C0510F2D598C8900CB4747 /* GraceAiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0510E2D598C8900CB4747 /* GraceAiTests.swift */; };
+		78C051192D598C8900CB4747 /* GraceAiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C051182D598C8900CB4747 /* GraceAiUITests.swift */; };
+		78C0511B2D598C8900CB4747 /* GraceAiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0511A2D598C8900CB4747 /* GraceAiUITestsLaunchTests.swift */; };
+		78C0512A2D59945C00CB4747 /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C051272D59945C00CB4747 /* ChatGPTService.swift */; };
+		78C0512B2D59945C00CB4747 /* VoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C051282D59945C00CB4747 /* VoiceService.swift */; };
+		78C0512D2D59975E00CB4747 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0512C2D59975E00CB4747 /* Config.swift */; };
+		78D090522DDF137800C39032 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090512DDF137800C39032 /* ConversationManager.swift */; };
+		78D090532DDF137800C39032 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090512DDF137800C39032 /* ConversationManager.swift */; };
+		78D090542DDF137800C39032 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090512DDF137800C39032 /* ConversationManager.swift */; };
+		78D090582DDF138B00C39032 /* StreamingSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090572DDF138B00C39032 /* StreamingSpeechService.swift */; };
+		78D090592DDF138B00C39032 /* StreamingChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090562DDF138B00C39032 /* StreamingChatService.swift */; };
+		78D0905A2DDF138B00C39032 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090552DDF138B00C39032 /* SpeechRecognizer.swift */; };
+		78D0905B2DDF138B00C39032 /* StreamingSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090572DDF138B00C39032 /* StreamingSpeechService.swift */; };
+		78D0905C2DDF138B00C39032 /* StreamingChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090562DDF138B00C39032 /* StreamingChatService.swift */; };
+		78D0905D2DDF138B00C39032 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090552DDF138B00C39032 /* SpeechRecognizer.swift */; };
+		78D0905E2DDF138B00C39032 /* StreamingSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090572DDF138B00C39032 /* StreamingSpeechService.swift */; };
+		78D0905F2DDF138B00C39032 /* StreamingChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090562DDF138B00C39032 /* StreamingChatService.swift */; };
+		78D090602DDF138B00C39032 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090552DDF138B00C39032 /* SpeechRecognizer.swift */; };
+		78D090632DDF139D00C39032 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090612DDF139D00C39032 /* Message.swift */; };
+		78D090642DDF139D00C39032 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090612DDF139D00C39032 /* Message.swift */; };
+		78D090652DDF139D00C39032 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090612DDF139D00C39032 /* Message.swift */; };
+		78D090682DDF13AC00C39032 /* AudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090662DDF13AC00C39032 /* AudioWaveformView.swift */; };
+		78D090692DDF13AC00C39032 /* AudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090662DDF13AC00C39032 /* AudioWaveformView.swift */; };
+		78D0906A2DDF13AC00C39032 /* AudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090662DDF13AC00C39032 /* AudioWaveformView.swift */; };
+		78D0906C2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0906B2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift */; };
+		78D0906D2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0906B2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift */; };
+		78D0906E2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0906B2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift */; };
+		78D090712DDF6C8200C39032 /* LocalStreamingChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090702DDF6C8200C39032 /* LocalStreamingChatService.swift */; };
+		78D090722DDF6C8200C39032 /* LocalLLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0906F2DDF6C8200C39032 /* LocalLLMService.swift */; };
+		78D090732DDF6C8200C39032 /* LocalStreamingChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090702DDF6C8200C39032 /* LocalStreamingChatService.swift */; };
+		78D090742DDF6C8200C39032 /* LocalLLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0906F2DDF6C8200C39032 /* LocalLLMService.swift */; };
+		78D090752DDF6C8200C39032 /* LocalStreamingChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D090702DDF6C8200C39032 /* LocalStreamingChatService.swift */; };
+		78D090762DDF6C8200C39032 /* LocalLLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0906F2DDF6C8200C39032 /* LocalLLMService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78C0510B2D598C8900CB4747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C050ED2D598C8500CB4747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78C050F42D598C8500CB4747;
+			remoteInfo = GraceAi;
+		};
+		78C051152D598C8900CB4747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C050ED2D598C8500CB4747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78C050F42D598C8500CB4747;
+			remoteInfo = GraceAi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78C050F52D598C8500CB4747 /* GraceAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraceAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C050F82D598C8500CB4747 /* GraceAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraceAiApp.swift; sourceTree = "<group>"; };
+		78C050FA2D598C8500CB4747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78C050FC2D598C8900CB4747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78C050FF2D598C8900CB4747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78C051012D598C8900CB4747 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		78C051042D598C8900CB4747 /* GraceAi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GraceAi.xcdatamodel; sourceTree = "<group>"; };
+		78C0510A2D598C8900CB4747 /* GraceAiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraceAiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C0510E2D598C8900CB4747 /* GraceAiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraceAiTests.swift; sourceTree = "<group>"; };
+		78C051142D598C8900CB4747 /* GraceAiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraceAiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C051182D598C8900CB4747 /* GraceAiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraceAiUITests.swift; sourceTree = "<group>"; };
+		78C0511A2D598C8900CB4747 /* GraceAiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraceAiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78C051272D59945C00CB4747 /* ChatGPTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
+		78C051282D59945C00CB4747 /* VoiceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceService.swift; sourceTree = "<group>"; };
+		78C0512C2D59975E00CB4747 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		78C0512E2D59ABC100CB4747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D090512DDF137800C39032 /* ConversationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationManager.swift; sourceTree = "<group>"; };
+		78D090552DDF138B00C39032 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		78D090562DDF138B00C39032 /* StreamingChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingChatService.swift; sourceTree = "<group>"; };
+		78D090572DDF138B00C39032 /* StreamingSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingSpeechService.swift; sourceTree = "<group>"; };
+		78D090612DDF139D00C39032 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		78D090662DDF13AC00C39032 /* AudioWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioWaveformView.swift; sourceTree = "<group>"; };
+		78D0906B2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAISpeechRecognizer.swift; sourceTree = "<group>"; };
+		78D0906F2DDF6C8200C39032 /* LocalLLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLLMService.swift; sourceTree = "<group>"; };
+		78D090702DDF6C8200C39032 /* LocalStreamingChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStreamingChatService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78C050F22D598C8500CB4747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C051072D598C8900CB4747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C051112D598C8900CB4747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78C050EC2D598C8500CB4747 = {
+			isa = PBXGroup;
+			children = (
+				78C050F72D598C8500CB4747 /* GraceAi */,
+				78C0510D2D598C8900CB4747 /* GraceAiTests */,
+				78C051172D598C8900CB4747 /* GraceAiUITests */,
+				78C050F62D598C8500CB4747 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78C050F62D598C8500CB4747 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C050F52D598C8500CB4747 /* GraceAi.app */,
+				78C0510A2D598C8900CB4747 /* GraceAiTests.xctest */,
+				78C051142D598C8900CB4747 /* GraceAiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C050F72D598C8500CB4747 /* GraceAi */ = {
+			isa = PBXGroup;
+			children = (
+				78D090672DDF13AC00C39032 /* Views */,
+				78D090622DDF139D00C39032 /* Models */,
+				78C051292D59945C00CB4747 /* Services */,
+				78C050F82D598C8500CB4747 /* GraceAiApp.swift */,
+				78C050FA2D598C8500CB4747 /* ContentView.swift */,
+				78C0512C2D59975E00CB4747 /* Config.swift */,
+				78C0512E2D59ABC100CB4747 /* Info.plist */,
+				78C050FC2D598C8900CB4747 /* Assets.xcassets */,
+				78C051012D598C8900CB4747 /* Persistence.swift */,
+				78C051032D598C8900CB4747 /* GraceAi.xcdatamodeld */,
+				78C050FE2D598C8900CB4747 /* Preview Content */,
+			);
+			path = GraceAi;
+			sourceTree = "<group>";
+		};
+		78C050FE2D598C8900CB4747 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78C050FF2D598C8900CB4747 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78C0510D2D598C8900CB4747 /* GraceAiTests */ = {
+			isa = PBXGroup;
+			children = (
+				78C0510E2D598C8900CB4747 /* GraceAiTests.swift */,
+			);
+			path = GraceAiTests;
+			sourceTree = "<group>";
+		};
+		78C051172D598C8900CB4747 /* GraceAiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78C051182D598C8900CB4747 /* GraceAiUITests.swift */,
+				78C0511A2D598C8900CB4747 /* GraceAiUITestsLaunchTests.swift */,
+			);
+			path = GraceAiUITests;
+			sourceTree = "<group>";
+		};
+		78C051292D59945C00CB4747 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78D0906F2DDF6C8200C39032 /* LocalLLMService.swift */,
+				78D090702DDF6C8200C39032 /* LocalStreamingChatService.swift */,
+				78D0906B2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift */,
+				78D090552DDF138B00C39032 /* SpeechRecognizer.swift */,
+				78D090562DDF138B00C39032 /* StreamingChatService.swift */,
+				78D090572DDF138B00C39032 /* StreamingSpeechService.swift */,
+				78D090512DDF137800C39032 /* ConversationManager.swift */,
+				78C051272D59945C00CB4747 /* ChatGPTService.swift */,
+				78C051282D59945C00CB4747 /* VoiceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78D090622DDF139D00C39032 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78D090612DDF139D00C39032 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78D090672DDF13AC00C39032 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78D090662DDF13AC00C39032 /* AudioWaveformView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78C050F42D598C8500CB4747 /* GraceAi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C0511E2D598C8900CB4747 /* Build configuration list for PBXNativeTarget "GraceAi" */;
+			buildPhases = (
+				78C050F12D598C8500CB4747 /* Sources */,
+				78C050F22D598C8500CB4747 /* Frameworks */,
+				78C050F32D598C8500CB4747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraceAi;
+			productName = GraceAi;
+			productReference = 78C050F52D598C8500CB4747 /* GraceAi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78C051092D598C8900CB4747 /* GraceAiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C051212D598C8900CB4747 /* Build configuration list for PBXNativeTarget "GraceAiTests" */;
+			buildPhases = (
+				78C051062D598C8900CB4747 /* Sources */,
+				78C051072D598C8900CB4747 /* Frameworks */,
+				78C051082D598C8900CB4747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78C0510C2D598C8900CB4747 /* PBXTargetDependency */,
+			);
+			name = GraceAiTests;
+			productName = GraceAiTests;
+			productReference = 78C0510A2D598C8900CB4747 /* GraceAiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78C051132D598C8900CB4747 /* GraceAiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C051242D598C8900CB4747 /* Build configuration list for PBXNativeTarget "GraceAiUITests" */;
+			buildPhases = (
+				78C051102D598C8900CB4747 /* Sources */,
+				78C051112D598C8900CB4747 /* Frameworks */,
+				78C051122D598C8900CB4747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78C051162D598C8900CB4747 /* PBXTargetDependency */,
+			);
+			name = GraceAiUITests;
+			productName = GraceAiUITests;
+			productReference = 78C051142D598C8900CB4747 /* GraceAiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78C050ED2D598C8500CB4747 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					78C050F42D598C8500CB4747 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					78C051092D598C8900CB4747 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 78C050F42D598C8500CB4747;
+					};
+					78C051132D598C8900CB4747 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 78C050F42D598C8500CB4747;
+					};
+				};
+			};
+			buildConfigurationList = 78C050F02D598C8500CB4747 /* Build configuration list for PBXProject "GraceAi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78C050EC2D598C8500CB4747;
+			productRefGroup = 78C050F62D598C8500CB4747 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78C050F42D598C8500CB4747 /* GraceAi */,
+				78C051092D598C8900CB4747 /* GraceAiTests */,
+				78C051132D598C8900CB4747 /* GraceAiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78C050F32D598C8500CB4747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C051002D598C8900CB4747 /* Preview Assets.xcassets in Resources */,
+				78C050FD2D598C8900CB4747 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C051082D598C8900CB4747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C051122D598C8900CB4747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78C050F12D598C8500CB4747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C0512B2D59945C00CB4747 /* VoiceService.swift in Sources */,
+				78D090732DDF6C8200C39032 /* LocalStreamingChatService.swift in Sources */,
+				78D090742DDF6C8200C39032 /* LocalLLMService.swift in Sources */,
+				78C051052D598C8900CB4747 /* GraceAi.xcdatamodeld in Sources */,
+				78D090532DDF137800C39032 /* ConversationManager.swift in Sources */,
+				78D0906E2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift in Sources */,
+				78C051022D598C8900CB4747 /* Persistence.swift in Sources */,
+				78C0512D2D59975E00CB4747 /* Config.swift in Sources */,
+				78C050FB2D598C8500CB4747 /* ContentView.swift in Sources */,
+				78C050F92D598C8500CB4747 /* GraceAiApp.swift in Sources */,
+				78C0512A2D59945C00CB4747 /* ChatGPTService.swift in Sources */,
+				78D090682DDF13AC00C39032 /* AudioWaveformView.swift in Sources */,
+				78D090582DDF138B00C39032 /* StreamingSpeechService.swift in Sources */,
+				78D090642DDF139D00C39032 /* Message.swift in Sources */,
+				78D090592DDF138B00C39032 /* StreamingChatService.swift in Sources */,
+				78D0905A2DDF138B00C39032 /* SpeechRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C051062D598C8900CB4747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D090542DDF137800C39032 /* ConversationManager.swift in Sources */,
+				78C0510F2D598C8900CB4747 /* GraceAiTests.swift in Sources */,
+				78D090692DDF13AC00C39032 /* AudioWaveformView.swift in Sources */,
+				78D0906C2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift in Sources */,
+				78D0905B2DDF138B00C39032 /* StreamingSpeechService.swift in Sources */,
+				78D090632DDF139D00C39032 /* Message.swift in Sources */,
+				78D0905C2DDF138B00C39032 /* StreamingChatService.swift in Sources */,
+				78D090712DDF6C8200C39032 /* LocalStreamingChatService.swift in Sources */,
+				78D090722DDF6C8200C39032 /* LocalLLMService.swift in Sources */,
+				78D0905D2DDF138B00C39032 /* SpeechRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C051102D598C8900CB4747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C051192D598C8900CB4747 /* GraceAiUITests.swift in Sources */,
+				78D090752DDF6C8200C39032 /* LocalStreamingChatService.swift in Sources */,
+				78D090762DDF6C8200C39032 /* LocalLLMService.swift in Sources */,
+				78D090522DDF137800C39032 /* ConversationManager.swift in Sources */,
+				78D0906D2DDF1E7000C39032 /* OpenAISpeechRecognizer.swift in Sources */,
+				78C0511B2D598C8900CB4747 /* GraceAiUITestsLaunchTests.swift in Sources */,
+				78D0905E2DDF138B00C39032 /* StreamingSpeechService.swift in Sources */,
+				78D0905F2DDF138B00C39032 /* StreamingChatService.swift in Sources */,
+				78D090602DDF138B00C39032 /* SpeechRecognizer.swift in Sources */,
+				78D0906A2DDF13AC00C39032 /* AudioWaveformView.swift in Sources */,
+				78D090652DDF139D00C39032 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78C0510C2D598C8900CB4747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78C050F42D598C8500CB4747 /* GraceAi */;
+			targetProxy = 78C0510B2D598C8900CB4747 /* PBXContainerItemProxy */;
+		};
+		78C051162D598C8900CB4747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78C050F42D598C8500CB4747 /* GraceAi */;
+			targetProxy = 78C051152D598C8900CB4747 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78C0511C2D598C8900CB4747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78C0511D2D598C8900CB4747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78C0511F2D598C8900CB4747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GraceAi/Preview Content\"";
+				DEVELOPMENT_TEAM = X927P76V64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraceAi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = max.GraceAi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78C051202D598C8900CB4747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GraceAi/Preview Content\"";
+				DEVELOPMENT_TEAM = X927P76V64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraceAi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = max.GraceAi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78C051222D598C8900CB4747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = max.GraceAiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraceAi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GraceAi";
+			};
+			name = Debug;
+		};
+		78C051232D598C8900CB4747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = max.GraceAiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraceAi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GraceAi";
+			};
+			name = Release;
+		};
+		78C051252D598C8900CB4747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = max.GraceAiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GraceAi;
+			};
+			name = Debug;
+		};
+		78C051262D598C8900CB4747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = max.GraceAiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GraceAi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78C050F02D598C8500CB4747 /* Build configuration list for PBXProject "GraceAi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C0511C2D598C8900CB4747 /* Debug */,
+				78C0511D2D598C8900CB4747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C0511E2D598C8900CB4747 /* Build configuration list for PBXNativeTarget "GraceAi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C0511F2D598C8900CB4747 /* Debug */,
+				78C051202D598C8900CB4747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C051212D598C8900CB4747 /* Build configuration list for PBXNativeTarget "GraceAiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C051222D598C8900CB4747 /* Debug */,
+				78C051232D598C8900CB4747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C051242D598C8900CB4747 /* Build configuration list for PBXNativeTarget "GraceAiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C051252D598C8900CB4747 /* Debug */,
+				78C051262D598C8900CB4747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78C051032D598C8900CB4747 /* GraceAi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78C051042D598C8900CB4747 /* GraceAi.xcdatamodel */,
+			);
+			currentVersion = 78C051042D598C8900CB4747 /* GraceAi.xcdatamodel */;
+			path = GraceAi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78C050ED2D598C8500CB4747 /* Project object */;
+}
