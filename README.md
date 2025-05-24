@@ -1,116 +1,104 @@
 # GraceAi
 
-GraceAi是一个语音驱动的AI助手iOS应用，支持与本地DeepSeek LLM模型和OpenAI模型的集成。
+> 受电影《Her》启发的AI伴侣项目 - 探索具有长期记忆和独特个性的AI交互体验
 
-## 功能特性
+## 🎯 项目目的
 
-- 🗣️ **语音交互**: 实时语音识别和语音合成
-- 🤖 **多模型支持**: 支持本地DeepSeek模型和OpenAI模型
-- 📱 **原生iOS应用**: 使用SwiftUI构建的现代界面
-- 🔄 **流式响应**: 实时文本流显示，边生成边播放
-- 🎯 **句子级TTS**: 智能句子检测，按句播放语音
-- 🔗 **SSE支持**: 服务器端事件流，低延迟响应
+GraceAi旨在创造一个能够与用户建立持久、个性化情感连接的AI伴侣系统。不同于传统AI助手，GraceAi专注于：
 
-## 项目结构
+- **长期记忆**：记住与用户的互动历史，关系随时间发展
+- **独特个性**：通过微调模型展现一致的性格特征
+- **情感理解**：能够感知、回应并表达情感
+- **自然交流**：通过语音实现流畅的对话体验
 
-```
-GraceAi/
-├── GraceAi/                    # iOS应用主目录
-│   ├── Services/               # 核心服务
-│   │   ├── ConversationManager.swift      # 对话管理
-│   │   ├── LocalLLMService.swift          # 本地LLM服务
-│   │   ├── VoiceService.swift             # 语音合成服务
-│   │   └── OpenAISpeechRecognizer.swift   # 语音识别服务
-│   ├── Views/                  # UI视图
-│   ├── Models/                 # 数据模型
-│   └── Config.swift            # 配置文件
-├── chatsaver/                  # 本地DeepSeek服务器
-│   ├── server.py               # FastAPI服务器
-│   ├── requirements.txt        # Python依赖
-│   └── start_server.sh         # 启动脚本
-└── GraceAi.xcodeproj          # Xcode项目文件
-```
+## ✨ 核心特性
 
-## 安装和配置
+### 🧠 智能记忆系统
+- 基于RAG的长期记忆，记住重要对话和情感时刻
+- 智能检索相关记忆，自然融入当前对话
+- 三层记忆架构：短期、中期、长期记忆管理
 
-### 1. 克隆仓库
+### 🎭 个性化AI伴侣
+- 微调的GPT模型，具备独特性格和表达风格
+- 情感感知和表达能力
+- 一致的价值观和对话风格
 
+### 🗣️ 自然语音交互
+- 实时语音识别和语音合成
+- 流式响应显示，边生成边播放
+- 句子级TTS处理，自然的对话节奏
+
+
+
+## 🛠️ 技术架构
+
+- **前端**: SwiftUI原生iOS应用
+- **AI模型**: OpenAI GPT-4 + 微调模型
+- **记忆系统**: RAG + 向量数据库
+- **语音**: OpenAI Whisper + TTS
+- **后端**: 本地DeepSeek服务器（可选）
+
+## 🚀 快速开始
+
+### 1. 克隆项目
 ```bash
 git clone https://github.com/max-7189/GraceAi.git
 cd GraceAi
 ```
 
 ### 2. 配置API密钥
-
-#### 方法一：Info.plist配置（推荐）
-在 `GraceAi/Info.plist` 中添加：
+在 `GraceAi/Info.plist` 中添加你的OpenAI API密钥：
 ```xml
 <key>OPENAI_API_KEY</key>
 <string>your-openai-api-key-here</string>
 ```
 
-#### 方法二：环境变量
-```bash
-export OPENAI_API_KEY="your-openai-api-key-here"
-```
+### 3. 运行应用
+1. 在Xcode中打开 `GraceAi.xcodeproj`
+2. 选择目标设备
+3. 构建并运行
 
-### 3. 设置本地DeepSeek服务器（可选）
-
-如果要使用本地模型：
-
-1. 安装Python依赖：
+### 4. 本地模型（可选）
+如果要使用本地DeepSeek模型：
 ```bash
 cd chatsaver
 pip install -r requirements.txt
-```
-
-2. 下载模型：
-```bash
 python download_model.py
-```
-
-3. 启动服务器：
-```bash
 ./start_server.sh
 ```
 
-4. 更新网络配置：
-   - 在 `Config.swift` 中设置 `useLocalModel = true`
-   - 更新 `localModelURL` 为你的本地IP地址
-
-### 4. 运行iOS应用
-
-1. 在Xcode中打开 `GraceAi.xcodeproj`
-2. 选择目标设备或模拟器
-3. 点击运行
-
-## 使用说明
-
-1. **语音交互**: 点击麦克风按钮开始语音输入
-2. **模型切换**: 在设置中切换本地模型和OpenAI模型
-3. **实时对话**: 支持流式响应，边生成边播放语音
-
-## 技术栈
-
-- **iOS**: SwiftUI, AVFoundation, Speech Framework
-- **AI模型**: OpenAI GPT-4, 本地DeepSeek LLM
-- **服务器**: Python FastAPI, SSE流式响应
-- **语音**: OpenAI TTS, OpenAI Whisper
-
-## 系统要求
+## 📱 系统要求
 
 - iOS 15.0+
 - Xcode 14.0+
-- Python 3.8+ (用于本地服务器)
+- OpenAI API密钥
+- Python 3.8+（本地服务器）
 
-## 许可证
+## 🎨 使用体验
 
-本项目采用MIT许可证。
+1. 🎤 **点击麦克风**开始语音对话
+2. 💬 **实时文本显示**，流式响应体验  
+3. 🔊 **自然语音播放**，按句子播放TTS
+4. 🧠 **智能记忆**，AI会记住你们的对话历史
+5. 💝 **情感连接**，感受有温度的AI交流
 
-## 贡献
+## 📋 项目状态
 
-欢迎提交Issue和Pull Request！
+这是一个**技术探索项目**，旨在研究AI伴侣的可能性边界。项目坚持：
 
-## 联系方式
+- ✅ 技术透明性
+- ✅ 用户数据控制
+- ✅ 隐私保护优先  
+- ✅ 研究导向
 
-如有问题，请在GitHub上创建Issue。 
+## 🤝 参与贡献
+
+欢迎对AI伴侣技术感兴趣的开发者参与讨论和改进！
+
+## 📄 许可证
+
+MIT License
+
+---
+
+*"在技术与情感的交汇处，探索AI伴侣的无限可能"* 
